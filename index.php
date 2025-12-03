@@ -78,25 +78,25 @@
     <tr>
         <td>Drywall</td>
         <td>$<?= number_format($drywall, 2) ?></td>
-        <td>$<?= number_format($drywall, 2) ?></td>
-        <td>$<?= number_format($drywall, 2) ?></td>
-        <td>$<?= number_format($drywall, 2) ?></td>
+        <td>$<?= number_format($drywall10, 2) ?></td>
+        <td>$<?= number_format($drywall15, 2) ?></td>
+        <td>$<?= number_format($drywall20, 2) ?></td>
     </tr>
 
     <tr>
         <td>Paint</td>
         <td>$<?= number_format($paint, 2) ?></td>
-        <td>$<?= number_format($paint, 2) ?></td>
-        <td>$<?= number_format($paint, 2) ?></td>
-        <td>$<?= number_format($paint, 2) ?></td>
+        <td>$<?= number_format($paint10, 2) ?></td>
+        <td>$<?= number_format($paint15, 2) ?></td>
+        <td>$<?= number_format($paint20, 2) ?></td>
     </tr>
 
     <tr>
         <td>Misc</td>
         <td>$<?= number_format($misc, 2) ?></td>
-        <td>$<?= number_format($misc, 2) ?></td>
-        <td>$<?= number_format($misc, 2) ?></td>
-        <td>$<?= number_format($misc, 2) ?></td>
+        <td>$<?= number_format($misc10, 2) ?></td>
+        <td>$<?= number_format($misc15, 2) ?></td>
+        <td>$<?= number_format($misc20, 2) ?></td>
     </tr>
 </body>
 </html>
