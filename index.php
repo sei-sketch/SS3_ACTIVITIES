@@ -29,11 +29,17 @@
     $lumber15 = $lumber * 1.15;
     $lumber20 = $lumber * 1.20;
 
-    $lumber10 = $lumber * 1.10;
-    $lumber15 = $lumber * 1.15;
-    $lumber20 = $lumber * 1.20;
+    $concrete10 = $concrete * 1.10;
+    $concrete15 = $concrete * 1.15;
+    $concrete20 = $concrete * 1.20;
 
+    $drywall10 = $drywall * 1.10;
+    $drywall15 = $drywall * 1.15;
+    $drywall20 = $drywall * 1.20;
 
+    $paint10 = $paint * 1.10;
+    $paint15 = $paint * 1.15;
+    $paint20 = $paint * 1.20;
 
 ?>
 
@@ -55,6 +61,14 @@
         <td>$<?= number_format($lumber10, 2) ?></td>
         <td>$<?= number_format($lumber15, 2) ?></td>
         <td>$<?= number_format($lumber20, 2) ?></td>
+    </tr>
+
+    <tr>
+        <td>Concrete</td>
+        <td>$<?= number_format($concrete, 2) ?></td>
+        <td>$<?= number_format($concrete10, 2) ?></td>
+        <td>$<?= number_format($concrete15, 2) ?></td>
+        <td>$<?= number_format($concrete20, 2) ?></td>
     </tr>
 </body>
 </html>
