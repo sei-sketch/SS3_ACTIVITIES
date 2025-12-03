@@ -40,5 +40,13 @@
         <th>15% Increase</th>
         <th>20% Increase</th>
     </tr>
+
+    <tr>
+        <td>Lumber</td>
+        <td>$<?= number_format($lumber, 2) ?></th>
+        <td>$<?= number_format($lumber10, 2) ?></td>
+        <td>$<?= number_format($lumber15, 2) ?></td>
+        <td>$<?= number_format($lumber20, 2) ?></td>
+    </tr>
 </body>
 </html>
