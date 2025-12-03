@@ -13,7 +13,7 @@
 $lumber = 150000;
 $concrete = 78000
 $drywall = 69000;
-$paint = "12000"; // wrong data type (string, not number)
+$paint = 12000; // wrong data type (string, not number)
 $misc = 20000;
 
 // Wrong math (using + instead of *)
