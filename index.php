@@ -45,6 +45,12 @@
     $misc15 = $misc * 1.15;
     $misc20 = $misc * 1.20;
 
+    $total = $lumber + $concrete + $drywall + $paint + $misc;
+    $total10 = $lumber10 + $concrete10 + $drywall10 + $paint10 + $misc10;
+    $total15 = $lumber15 + $concrete15 + $drywall15 + $paint15 + $misc15;
+    $total20 = $lumber20 + $concrete20 + $drywall20 + $paint20 + $misc20;
+
+
 ?>
 
 <h2>Public Library Expansion Project</h2>
@@ -98,5 +104,20 @@
         <td>$<?= number_format($misc15, 2) ?></td>
         <td>$<?= number_format($misc20, 2) ?></td>
     </tr>
+
+    <!-- total -->
+    <tr style="font-weight:bold; background:#4a2900; color:#90ee90;">
+        <td>Total Expenditures:</td>
+        <td>$<?= number_format($total, 2) ?></td>
+        <td>$<?= number_format($total10, 2) ?></td>
+        <td>$<?= number_format($total15, 2) ?></td>
+        <td>$<?= number_format($total20, 2) ?></td>
+    </tr>
+</table>
+
+<p style="margin-top:20px; font-size:18px; color:#ffffff;">
+    Created by: <strong>Cristoff</strong>
+</p>
+
 </body>
 </html>
