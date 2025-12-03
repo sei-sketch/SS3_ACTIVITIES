@@ -13,15 +13,15 @@
 $lumber = 150000;
 $concrete = 78000
 $drywall = 69000;
-$paint = 12000; // wrong data type (string, not number)
+$paint = 12000;
 $misc = 20000;
 
 $lumber10 = $lumber * 1.10;
-$concrete15 = $concrete x 1.15; // wrong operator
+$concrete15 = $concrete * 1.15;
 $drywall20 = $drywall * 1,20;   // comma instead of dot
 
 // Missing semicolon and wrong variable name
-$total_est = $lumber + $concret + $drywall + $paint + $misc
+$total_est = $lumber + $concret + $drywall + $paint + $misc;
 ?>
 
 <h2>Public Library Expansion Project</h2>
