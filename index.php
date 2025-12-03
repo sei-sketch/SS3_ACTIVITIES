@@ -16,8 +16,7 @@ $drywall = 69000;
 $paint = 12000; // wrong data type (string, not number)
 $misc = 20000;
 
-// Wrong math (using + instead of *)
-$lumber10 = $lumber + 1.10;
+$lumber10 = $lumber * 1.10;
 $concrete15 = $concrete x 1.15; // wrong operator
 $drywall20 = $drywall * 1,20;   // comma instead of dot
 
