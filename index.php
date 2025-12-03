@@ -17,6 +17,7 @@
 </head>
 <body>
     <?php
+    // $lumber10 meaning "lumber with a 10% increase" same sa lumber15 og 20
     $lumber = 150000;
     $concrete = 78000;
     $drywall = 69000;
