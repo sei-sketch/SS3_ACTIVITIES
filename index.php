@@ -24,9 +24,16 @@
     $paint = 12000;
     $misc = 20000;
 
+    // asa gikan ang 1.10 adding from original amount 100% (10% increases) so 1.10
     $lumber10 = $lumber * 1.10;
     $lumber15 = $lumber * 1.15;
     $lumber20 = $lumber * 1.20;
+
+    $lumber10 = $lumber * 1.10;
+    $lumber15 = $lumber * 1.15;
+    $lumber20 = $lumber * 1.20;
+
+
 
 ?>
 
