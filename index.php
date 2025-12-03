@@ -41,6 +41,10 @@
     $paint15 = $paint * 1.15;
     $paint20 = $paint * 1.20;
 
+    $misc10 = $misc * 1.10;
+    $misc15 = $misc * 1.15;
+    $misc20 = $misc * 1.20;
+
 ?>
 
 <h2>Public Library Expansion Project</h2>
@@ -69,6 +73,30 @@
         <td>$<?= number_format($concrete10, 2) ?></td>
         <td>$<?= number_format($concrete15, 2) ?></td>
         <td>$<?= number_format($concrete20, 2) ?></td>
+    </tr>
+
+    <tr>
+        <td>Drywall</td>
+        <td>$<?= number_format($drywall, 2) ?></td>
+        <td>$<?= number_format($drywall, 2) ?></td>
+        <td>$<?= number_format($drywall, 2) ?></td>
+        <td>$<?= number_format($drywall, 2) ?></td>
+    </tr>
+
+    <tr>
+        <td>Paint</td>
+        <td>$<?= number_format($paint, 2) ?></td>
+        <td>$<?= number_format($paint, 2) ?></td>
+        <td>$<?= number_format($paint, 2) ?></td>
+        <td>$<?= number_format($paint, 2) ?></td>
+    </tr>
+
+    <tr>
+        <td>Misc</td>
+        <td>$<?= number_format($misc, 2) ?></td>
+        <td>$<?= number_format($misc, 2) ?></td>
+        <td>$<?= number_format($misc, 2) ?></td>
+        <td>$<?= number_format($misc, 2) ?></td>
     </tr>
 </body>
 </html>
