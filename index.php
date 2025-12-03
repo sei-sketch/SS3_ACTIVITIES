@@ -18,7 +18,7 @@ $misc = 20000;
 
 $lumber10 = $lumber * 1.10;
 $concrete15 = $concrete * 1.15;
-$drywall20 = $drywall * 1,20;   // comma instead of dot
+$drywall20 = $drywall * 1.20;
 
 // Missing semicolon and wrong variable name
 $total_est = $lumber + $concret + $drywall + $paint + $misc;
