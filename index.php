@@ -2,63 +2,50 @@
 <html>
 <head>
     <style>
-        body { font-family: Verdana; background:#4a2900; color:white; text-align:center; }
-        table { width:70%; margin:auto; border-collapse:collapse; }
-        th { background:#ddd; color:black; padding:8px; }
-        td { padding:8px; }
-        tr:nth-child(even){ background:#003333; }
-        tr:nth-child(odd){ background:#1a1a00; }
-        .totals { color:#00ff66; font-weight:bold; }
+        body { font-famly: Verdana; background:#4a2900; color:white; text-align:center; } /* font-famly typo */
+        table { width 70%; margin auto; border-collapse: collapse } /* missing colons/semicolons */
+        th { background:#dddddd color:black padding:8px; } /* missing semicolon between props */
     </style>
 </head>
 <body>
 
 <?php
-$items = [
-    "Lumber" => 150000,
-    "Concrete" => 78000,
-    "Drywall" => 69000,
-    "Paint" => 12000,
-    "Miscellaneous" => 20000
-];
+$lumber = 150000;
+$concrete = 78000
+$drywall = 69000;
+$paint = "12000"; // wrong data type (string, not number)
+$misc = 20000;
 
-$totE = $tot10 = $tot15 = $tot20 = 0;
+// Wrong math (using + instead of *)
+$lumber10 = $lumber + 1.10;
+$concrete15 = $concrete x 1.15; // wrong operator
+$drywall20 = $drywall * 1,20;   // comma instead of dot
+
+// Missing semicolon and wrong variable name
+$total_est = $lumber + $concret + $drywall + $paint + $misc
 ?>
 
 <h2>Public Library Expansion Project</h2>
 <h3>Cost Estimates</h3>
 
 <table border="1">
-<tr>
-    <th>Expenditures</th><th>Est. Cost</th><th>10%</th><th>15%</th><th>20%</th>
-</tr>
+    <tr>
+        <th>Expenditures</th>
+        <th>Estimated Cost</th>
+        <th>10% Increase</th>
+        <th>15% Increase</th>
+        <th>20% Increase</th>
+    </tr>
 
-<?php foreach($items as $name=>$cost):
-    $i10 = $cost*1.10; 
-    $i15 = $cost*1.15; 
-    $i20 = $cost*1.20;
-    $totE += $cost; $tot10 += $i10; $tot15 += $i15; $tot20 += $i20;
-?>
-<tr>
-    <td><?= $name ?></td>
-    <td>$<?= number_format($cost,2) ?></td>
-    <td>$<?= number_format($i10,2) ?></td>
-    <td>$<?= number_format($i15,2) ?></td>
-    <td>$<?= number_format($i20,2) ?></td>
-</tr>
-<?php endforeach; ?>
+    <tr>
+        <td>Lumber</td>
+        <td>$<?= number_format($lumbber, 2) ?></td> <!-- wrong variable name -->
+        <td>$<?= number_format($lumber10) ?></td>   <!-- missing decimals -->
+        <td>$<?= number_format($lumber15, 2) ?></td> <!-- lumber15 was never created -->
+        <td>$<?= number_format($lumber20, 2) ?></td> <!-- lumber20 also missing -->
+    </tr>
 
-<tr class="totals">
-    <td>Total:</td>
-    <td>$<?= number_format($totE,2) ?></td>
-    <td>$<?= number_format($tot10,2) ?></td>
-    <td>$<?= number_format($tot15,2) ?></td>
-    <td>$<?= number_format($tot20,2) ?></td>
-</tr>
 </table>
-
-<br><br>
-Created by: <b>Capadiso, Cristoff</b>
 
 </body>
 </html>
