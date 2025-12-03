@@ -43,7 +43,7 @@
 
     <tr>
         <td>Lumber</td>
-        <td>$<?= number_format($lumber, 2) ?></th>
+        <td>$<?= number_format($lumber, 2) ?></td>
         <td>$<?= number_format($lumber10, 2) ?></td>
         <td>$<?= number_format($lumber15, 2) ?></td>
         <td>$<?= number_format($lumber20, 2) ?></td>
