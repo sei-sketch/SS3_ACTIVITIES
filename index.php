@@ -22,5 +22,7 @@
     $drywall = 69000;
     $paint = 12000;
     $misc = 20000;
+
+?>
 </body>
 </html>
