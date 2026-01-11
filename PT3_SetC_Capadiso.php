@@ -66,7 +66,7 @@
         $hoursPerDay = 8;
         $workingDays = 26;
 
-        $income = $horlyRate * $hoursPerDay * $workingDays;
+        $income = $hourlyRate * $hoursPerDay * $workingDays;
 
         if ($income <= 15000) {
             $tax = 0;
