@@ -78,7 +78,7 @@
 
         $netIncome = $income - $tax;
     ?>
-    <div class="reslt">
+    <div class="result">
         <p><strong>Hourly Rate:</strong> $<?php echo number_format($hourlyRte, 2); ?></p>
         <p><strong>Income:</strong> $<?php echo number_format($income, 2); ?></p>
         <p><strong>Tax:</strong> $<?php echo number_format($tax, 2); ?></p>
