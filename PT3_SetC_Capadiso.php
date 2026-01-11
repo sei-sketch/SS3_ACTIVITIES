@@ -62,7 +62,7 @@
 
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $hourlyRate = flatval($_POST['hourlyRate']);
+        $hourlyRate = floatval($_POST['hourlyRate']);
         $hoursPerDay = 8;
         $workingDays = 26;
 
